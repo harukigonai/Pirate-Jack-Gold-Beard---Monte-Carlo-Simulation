@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgba(206, 206, 206, 0.808);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,66 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.grid {
+  outline: 0.5px solid rgb(151, 151, 151);
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+
+  display: inline-block;
+
+  outline: 0.5px solid rgb(151, 151, 151);
+  margin: 0;
+}
+
+.row {
+  height: 50px;
+  width: 300px;
+}
+
+.game {
+  height: 550px;
+  position: relative;
+}
+
+.smallRow {
+  height: 50px;
+  width: 50px;
+}
+
+.nextIcons {
+  position: absolute;
+  top: 0;
+  left: -100px;
+
+  height: 100px;
+  width: 50px;
+}
+
+.unlockedIcons {
+  position: absolute;
+  top: 0;
+  right: -100px;
+
+  height: 550px;
+  width: 50px;
+
+  outline: 0.5px solid rgb(151, 151, 151);
+}
+
+.score {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  height: 50px;
+
+  color: rgb(151, 151, 151);
+
+  font-family: Menlo;
 }
